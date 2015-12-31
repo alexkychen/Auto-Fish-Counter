@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#Dec 30 2015 update by Alex Chen
+#Dec 30 2015 update by Alex Chen #
 #Open Pi camera and stream video to adjust parameters for finding fish contour
 from picamera.array import PiRGBArray
 from picamera import PiCamera
