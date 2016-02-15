@@ -7,8 +7,8 @@ import argparse, time, cv2
 
 parser = argparse.ArgumentParser()
 #setup camera resolution
-parser.add_argument('-rw','--resolutionWidth',type=int,help='Pi camera resolution in width. Max. is 1920.',choices=range(1,1920),default=560,metavar='')
-parser.add_argument('-rh','--resolutionHeight',type=int,help='Pi camera resolution in height. Max. is 1080.',choices=range(1,1080),default=420,metavar='')
+parser.add_argument('-rw','--resolutionWidth',type=int,help='Pi camera resolution in width. Max. is 1920.',choices=range(1,1921),default=560,metavar='')
+parser.add_argument('-rh','--resolutionHeight',type=int,help='Pi camera resolution in height. Max. is 1080.',choices=range(1,1081),default=420,metavar='')
 #setup camera zoom/crop 
 parser.add_argument('-zx','--zoomX',type=float,help='Region of Interest on X-axis. A value between 0 and 1. Default is 0. Increase value to crop image from the left.',default=0.0,metavar='')
 parser.add_argument('-zy','--zoomY',type=float,help='Region of Interest on Y-axis. A value between 0 and 1. Default is 0. Increase value to crop image from the top.',default=0.0,metavar='')
